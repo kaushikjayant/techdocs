@@ -1,7 +1,6 @@
 # Installation Guide
 
--   [Notices](../Copyright.md)
--   [Important Information](../imp_info.md)
+
 -   [EAA™ Overview](EAA_Install_Guide_topics/eaa_overview.md)
 -   [EAA™ Architecture](EAA_Install_Guide_topics/eaa_arch.md)
 -   [Requirements](topics/d0e517.md)
