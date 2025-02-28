@@ -1,4 +1,4 @@
-# EAA™ Overview {#topic_fgj_tv3_1bb}
+# EAA™ Overview 
 
 EAA™ is a cloud enabled assurance platform addressing the intelligence and automation requirements in assuring a hybrid or Network Function Virtualization \(NFV\) ready network. It unifies modelling, ingestion, analytics, presentation, and inter-system interactions to provide for a seamless deployment across the network.
 
