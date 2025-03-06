@@ -1,4 +1,6 @@
-# EAA ETL NODE Mode Activation {#topic_jsc_2qp_rdb}
+[Home](../index.md)
+
+# EAA ETL NODE Mode Activation
 
 ## Upgrade Preparation
 
@@ -194,4 +196,5 @@ oc process -f eaa-deploy/template/tpl-eaa-proptima-web-reporting.yaml --param-fi
 oc process -f eaa-deploy/template/tpl-eaa-proptima-admin.yaml --param-file eaa-deploy-site-<customer-project>/config/eaa-proptima-admin.env | oc apply -f -
 oc process -f eaa-deploy/template/tpl-eaa-proptima-ip-management.yaml --param-file eaa-deploy-site-<customer-project>/config/eaa-proptima-ip-management.env | oc apply -f -
 ```
+[Home](../index.md)
 
