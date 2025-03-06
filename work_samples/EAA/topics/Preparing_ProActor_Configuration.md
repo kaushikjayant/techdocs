@@ -1,20 +1,23 @@
+[Home](../index.md)
 # Preparing Configuration {#topic_otj_jtl_3db}
 
-Target: For a given product, ensure all customization is entered into configuration files and that all expected PVs are created.
+## Target  
+For a given product, ensure all customization is entered into configuration files and that all expected PVs are created.
 
--   Populate Configuration :
+## Steps  
 
-Run iterations of deployment script in dryrun, each time it fails with a missing parameter, ensure it is added eg:
+### 1. Populate Configuration  
+Run iterations of the deployment script in dry-run mode. Each time it fails due to a missing parameter, ensure that the parameter is added. For example:  
 
-```
-./deploy-proactor.sh --dryrun
-```
-
--   Create PVs :
-
-Once the deployment has been run successfully in dry-run mode, execute:
-
-```
-./eaa-deploy/shell/check-pvs.sh
+```sh
+./deploy-synaptifix.sh --dryrun
 ```
 
+### 2. Create PVs  
+Once the deployment has successfully completed in dry-run mode, execute the following command to verify and create the required PVs:  
+
+```sh
+./ncp/shell/check-pvs.sh
+```
+
+[Home](../index.md)
