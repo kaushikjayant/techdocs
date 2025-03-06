@@ -1,3 +1,4 @@
+[Home](../index.md)
 # Installing Connectors
 
 This script deploys the following connectors:
@@ -114,4 +115,4 @@ This script deploys the following connectors:
     ```
 
 The connectors are now installed successfully.
-
+[Home](../index.md)
