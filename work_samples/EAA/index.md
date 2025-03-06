@@ -18,7 +18,7 @@
     -   [Configuring NBI for PulseOptima](topics/Configuring_NBI_Version.md)
 -   [Preparing Configuration](topics/Preparing_ProActor_Configuration.md)
 -   [NetPulse ETL NODE mode activation](topics/appx_etl_node_mode_activation.md)
--   [Installing NetPulseAssure](topics/d0e1367.md)
+-   [Installing PulseAssure](topics/d0e1367.md)
 -   [Installing Connectors](topics/d0e1367conn.md)
 -   [Configuring Environment Variables](topics/configuring_proassure.md)
     -   [Customizing PulseAssure Configuration](topics/proassure_config.md)
