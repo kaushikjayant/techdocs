@@ -28,7 +28,6 @@
 -   [FaultShield Platform Installation](topics/d0e1583.md)
 -   [Configuring Environment Variables](EAA_FM_Topics/configuring_proassure.md)
     -   [Customizing FaultShield Configuration](EAA_FM_Topics/proassure_config.md)
--   [Deploying Common Configuration](EAA_Install_Guide_topics/related_docs_eaa.md)
 -   [Preparing Configuration](topics/Preparing_ProActor_Configuration.md)
 -   [Upgrading SynaptiFix](topics/Upgrading_to_Proactor_3_0.md)
 -   [PredictPulse Installation](topics/d0e2112.md)
