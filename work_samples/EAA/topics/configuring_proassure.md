@@ -1,3 +1,5 @@
+[Home](../index.md)
+
 # Configuring Environment Variables 
 
 After installing a component template, you may need to modify environment variables to ensure proper functionality in the target environment. The configuration is stored in template (YAML) files deployed in the environment. To update configuration settings for a component, you must modify the corresponding YAML file and redeploy it.
@@ -21,3 +23,4 @@ After installing a component template, you may need to modify environment variab
 
 4. **Redeploy the Template**
 
+[Home](../index.md)
