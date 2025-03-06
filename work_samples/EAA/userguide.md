@@ -1,4 +1,5 @@
 # NetPulse Suite User Guide
+-   [Glossary](topics/glossary.md)
 
 ## Introduction
 NetPulse Suite is a telecom network assurance platform offering web-based applications for network performance management, fault management, outage prediction, monitoring, and orchestration for network correction. This guide details how to access and use its features.
