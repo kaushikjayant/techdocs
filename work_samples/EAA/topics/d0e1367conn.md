@@ -1,128 +1,117 @@
-# Installing Connectors {#d0e1367}
+# Installing Connectors
 
-This script will deploy the following connectors:
+This script deploys the following connectors:
 
--   *CMDB Granite Connector*
--   *CMDB Granite Soap C1 Connector*
--   *CT-Remedy SOAP Connector*
--   *CMDB Generic Connector*
--   *TT Connector*
--   *TMF 524 Connector*
--   *FM Netcool Connector*
--   *BMC Inventory Connector*
--   BMC TT SOAP NBI Connector
--   BMC TT Remedy Kafka Connector
--   CMDB Granite SOAP Connector
+- *CMDB Granite Connector*
+- *CMDB Granite SOAP C1 Connector*
+- *CT-Remedy SOAP Connector*
+- *CMDB Generic Connector*
+- *TT Connector*
+- *TMF 524 Connector*
+- *FM Netcool Connector*
+- *BMC Inventory Connector*
+- *BMC TT SOAP NBI Connector*
+- *BMC TT Remedy Kafka Connector*
+- *CMDB Granite SOAP Connector*
 
-## Preparing Installation { .section}
+## Preparing for Installation
 
--   Clone the required repositories for installing connectors:
+1. Clone the required repositories for installing connectors:
 
-    ```
-    git clone git@gitlab.mycom-osi.com:eaa/eaa-deploy.git
-    git clone git@gitlab.mycom-osi.com:eaa/eaa-proassure-connector.git
-    ```
-
--   Check the connectors versions to be installed by running the following command.
-
-    ```
-    cat eaa-proassure-connector/release-version.txt
+    ```sh
+    git clone git@gitlab.bridgon.com:ncp/ncp-deploy.git
+    git clone git@gitlab.bridgon.com:ncp/netpulseassure-connector.git
     ```
 
--   Ensure that the templates required for installation exist by running the following command:
+2. Verify the connector versions to be installed:
 
-    ```
-    ls -la eaa-proassure-connector/template
-    ```
-
-
-## Installing Connectors { .section}
-
-Install connectors by performing the following steps:
-
--   Perform a dryrun installation by running the following command:
-
-    ```
-    deploy-connector.sh --dryrun eaa-<connector-name>
+    ```sh
+    cat netpulseassure-connector/release-version.txt
     ```
 
-    For example:
+3. Ensure the required templates exist:
 
-    ```
-    cd ~/eaa-proassure-connector
-    ./shell/deploy-connector.sh --dryrun eaa-cmdb-granite-connector
-    ```
-
-    **Note:** The above example demonstrates the deployment of the eaa-cmdb-granite-connector template. You must separately run the command by replacing the connector name for each template that needs to be deployed. You must additionally run the command after replacing eaa-<connector-name\> with:
-
-    -   eaa-cmdb-granite-soap-c1-connector to deploy CMDB Granite Soap C1 Connector.
-    -   eaa-fm-netcool-kafka-c1-connector to deploy FM Netcool Kafka C1 Connector.
-    -   eaa-bmc-inventory-connector to deploy BMC Inventory Connector.
-    -   eaa-bmc-tt-connector to deploy TT Connector.
-    -   eaa-cmdb-generic-connector to deploy CMDB Generic Connector.
-    -   eaa-ct-remedy-soap-c1-connector to deploy CT Remedy SOAP Connector.
-    -   eaa-fm-netcool-connector to deploy FM Netcool Connector.
-    -   eaa-tmf524-connector to deploy TMF524 Connector.
-    -   eaa-tt-remedy-soap-c2s-connector to deploy ProAssure BMC TT SOAP SBI Connector
-    -   eaa-tt-remedy-soap-c2n-connector to deploy BMC TT SOAP NBI Connector
-    -   eaa-tt-remedy-kafka-c1-connector to deploy BMC TT Remedy Kafka Connector
-    -   eaa-cmdb-granite-soap-c1-connector to deploy CMDB Granite SOAP Connector
-    An output similar to the following is displayed:
-
-    ```
-    /home/mycom/eaa-deploy-site-<$EAA_PROJECT>
-    Changing to project 'connector' 
-    Reading connector template file by eaa-cmdb-granite-connector
-    Installing eaa-cmdb-granite-connector:2.2.6.0
-    [20180614-10:49:52] [INFO] Processing template tpl-eaa-cmdb-granite-connector.yaml ...
-    [20180614-10:49:55] [INFO]    ... Injected 3 dimensioning parameters
-    All done
+    ```sh
+    ls -la netpulseassure-connector/template
     ```
 
--   Run the installation script in --proceed mode to complete the installation:
+## Installing Connectors
 
-    ```
-    deploy-connector.sh --proceed eaa-<connector-name>
-    ```
+### Dry Run Installation
 
-    For example:
+1. Perform a dry run installation to validate deployment:
 
-    ```
-    cd ~/eaa-proassure-connector
-    ./shell/deploy-connector.sh --proceed eaa-cmdb-granite-connector
+    ```sh
+    deploy-connector.sh --dryrun ncp-<connector-name>
     ```
 
-    **Note:** The above example demonstrates the deployment of the eaa-cmdb-granite-connector template. You must separately run the command by replacing the connector name for each template that needs to be deployed. You must additionally run the command after replacing eaa-<connector-name\> with:
+    Example:
 
-    -   eaa-bmc-inventory-connector to deploy BMC Inventory Connector.
-    -   eaa-cmdb-granite-soap-c1-connector to deploy CMDB Granite Soap C1 Connector.
-    -   eaa-fm-netcool-kafka-c1-connector to deploy FM Netcool Kafka C1 Connector.
-    -   eaa-bmc-tt-connector to deploy TT Connector.
-    -   eaa-cmdb-generic-connector to deploy CMDB Generic Connector.
-    -   eaa-ct-remedy-soap-c1-connector to deploy CT Remedy SOAP Connector.
-    -   eaa-fm-netcool-connector to deploy FM Netcool Connector.
-    -   eaa-tmf524-connector to deploy TMF524 Connector.
-    -   eaa-tt-remedy-soap-c2s-connector to deploy ProAssure BMC TT SOAP SBI Connector
-    -   eaa-tt-remedy-soap-c2n-connector to deploy BMC TT SOAP NBI Connector
-    -   eaa-tt-remedy-kafka-c1-connector to deploy BMC TT Remedy Kafka Connector
-    -   eaa-cmdb-granite-soap-c1-connector to deploy CMDB Granite SOAP Connector
-    An output similar to the following is displayed:
-
+    ```sh
+    cd ~/netpulseassure-connector
+    ./shell/deploy-connector.sh --dryrun ncp-cmdb-granite-connector
     ```
-    /home/mycom/eaa-deploy-site-<$EAA_PROJECT>
+
+2. Replace `<connector-name>` with the appropriate connector name:
+
+    - `ncp-cmdb-granite-soap-c1-connector` – CMDB Granite SOAP C1 Connector
+    - `ncp-fm-netcool-kafka-c1-connector` – FM Netcool Kafka C1 Connector
+    - `ncp-bmc-inventory-connector` – BMC Inventory Connector
+    - `ncp-bmc-tt-connector` – TT Connector
+    - `ncp-cmdb-generic-connector` – CMDB Generic Connector
+    - `ncp-ct-remedy-soap-c1-connector` – CT Remedy SOAP Connector
+    - `ncp-fm-netcool-connector` – FM Netcool Connector
+    - `ncp-tmf524-connector` – TMF 524 Connector
+    - `ncp-tt-remedy-soap-c2s-connector` – FaultShield BMC TT SOAP SBI Connector
+    - `ncp-tt-remedy-soap-c2n-connector` – BMC TT SOAP NBI Connector
+    - `ncp-tt-remedy-kafka-c1-connector` – BMC TT Remedy Kafka Connector
+    - `ncp-cmdb-granite-soap-c1-connector` – CMDB Granite SOAP Connector
+
+    Sample output:
+
+    ```sh
+    /home/bridgon/ncp-deploy-site-<$NCP_PROJECT>
     Changing to project 'connector'
-    Reading connector template file by eaa-cmdb-granite-connector
-    Installing eaa-cmdb-granite-connector:2.4.6.0
-    [20180614-10:53:27] [INFO] Processing template tpl-eaa-cmdb-granite-connector.yaml ...
-    [20180614-10:53:29] [INFO]    ... Injected 3 dimensioning parameters
-    imagestream "eaa-cmdb-granite-connector" configured
-    deploymentconfig "eaa-cmdb-granite-connector" configured
-    service "eaa-cmdb-granite-connector" configured
-    route "eaa-cmdb-granite-connector" configured
-    Importing eaa-cmdb-granite-connector:2.4.6.0 image...
+    Reading connector template file by ncp-cmdb-granite-connector
+    Installing ncp-cmdb-granite-connector:2.2.6.0
+    [INFO] Processing template tpl-ncp-cmdb-granite-connector.yaml ...
+    [INFO]    ... Injected 3 dimensioning parameters
     All done
     ```
 
-    The connectors are installed.
+### Proceed with Installation
 
+1. Run the installation script in `--proceed` mode to complete the deployment:
+
+    ```sh
+    deploy-connector.sh --proceed ncp-<connector-name>
+    ```
+
+    Example:
+
+    ```sh
+    cd ~/netpulseassure-connector
+    ./shell/deploy-connector.sh --proceed ncp-cmdb-granite-connector
+    ```
+
+2. Replace `<connector-name>` as in the dry run step above.
+
+    Sample output:
+
+    ```sh
+    /home/bridgon/ncp-deploy-site-<$NCP_PROJECT>
+    Changing to project 'connector'
+    Reading connector template file by ncp-cmdb-granite-connector
+    Installing ncp-cmdb-granite-connector:2.4.6.0
+    [INFO] Processing template tpl-ncp-cmdb-granite-connector.yaml ...
+    [INFO]    ... Injected 3 dimensioning parameters
+    imagestream "ncp-cmdb-granite-connector" configured
+    deploymentconfig "ncp-cmdb-granite-connector" configured
+    service "ncp-cmdb-granite-connector" configured
+    route "ncp-cmdb-granite-connector" configured
+    Importing ncp-cmdb-granite-connector:2.4.6.0 image...
+    All done
+    ```
+
+The connectors are now installed successfully.
 
