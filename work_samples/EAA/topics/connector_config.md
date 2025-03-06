@@ -1,45 +1,26 @@
-# Customizing Connectors Configuration {#topic_gc1_xk4_h2b}
+[Home](../index.md)
+# Customizing Connectors Configuration 
 
-This section describes the changes that you may need to make to the YAML files corresponding to ProAssure connectors. See [Configuring Environment Variables](configuring_proassure.md) for the procedure to customize environment variables in a template. The customizable variables for ProAssure are described in the table below:
+This section describes the changes that you may need to make to the YAML files corresponding to PulseAssure connectors. See [Configuring Environment Variables](../topics/configuring_proassure.md) for the procedure to customize environment variables in a template. The customizable variables for PulseAssure are described in the table below:
 
-|Variable Name|Description|Example/ Default Value|
-|-------------|-----------|----------------------|
-|**FM Netcool Connector**|
-| FMINGESTION\_ALARM  
- \_BATCH\_SIZE
-
- |Alarm batch size to be ingested|1|
-|JSON\_PATH|Configuration file default path|/opt/mycomosi/var/db/fm-netcool-connector|
-|**CMDB Generic Connector**|
-|CMDB\_ES\_QUERY\_LIMIT|CMDB Elastic query limit|10000|
-|CGC\_ES\_INDEX\_NAME|CMDB Elastic index name|cgc|
-|JSON\_ROOTPATH|Location of the configuration JSON file|/opt/mycomosi/data/web/var/db/cmdb-generic-connector|
-|**BMC TT Connector**|
-|BMC\_USERNAME|BMC account user name|sasmintuser|
-|BMC\_PASSWORD|BMC account password|password|
-|BMC\_INCIDENT\_WSDL|BMC incident WSDL file path| /opt/mycomosi/var/  
- db/bmc-tt-connector/  
- WSDL-path/H3G\_SA\_  
- SM\_HPD\_IncidentInterface  
- \_Staging\_WS.xml
-
- |
-|BMC\_PROBLEM\_WSDL|BMC problem WSDL file path| /opt/mycomosi/var/db/  
- bmc-tt-connector/  
- WSDL-path/H3G\_PBM  
- \_ProblemInterface\_  
- Staging\_WS.xml
-
- |
-|BMC\_INCIDENT\_QUERY\_WSDL|BMC incident query WSDL file path| /opt/mycomosi/var/db/  
- bmc-tt-connector/  
- WSDL-path/H3G\_  
- HPD\_IncidentInterface  
- \_WS.xml
-
- |
-|VALUE\_MAPPING\_PATH|Value mapping JSON file path|/opt/mycomosi/var/db/bmc-tt-connector/value-mapping/BMC\_TT\_ENUM\_MAPPING.json|
-|SEVERITY\_MAPPING\_PATH|Severity mapping JSON file path|/opt/mycomosi/var/db/bmc-tt-connector/value-mapping/PRIORITY\_TT\_SEVERITY.json|
+| Variable Name | Description | Example/ Default Value |
+|--------------|-------------|----------------------|
+| **FM Netcool Connector** |
+| FMINGESTION_ALARM_BATCH_SIZE | Alarm batch size to be ingested | 1 |
+| JSON_PATH | Configuration file default path | /opt/bridgon/var/db/fm-netcool-connector |
+| **CMDB Generic Connector** |
+| CMDB_ES_QUERY_LIMIT | CMDB Elastic query limit | 10000 |
+| CGC_ES_INDEX_NAME | CMDB Elastic index name | cgc |
+| JSON_ROOTPATH | Location of the configuration JSON file | /opt/bridgon/data/web/var/db/cmdb-generic-connector |
+| **BMC TT Connector** |
+| BMC_USERNAME | BMC account user name | sasmintuser |
+| BMC_PASSWORD | BMC account password | password |
+| BMC_INCIDENT_WSDL | BMC incident WSDL file path | /opt/bridgon/var/db/bmc-tt-connector/WSDL-path/H3G_SA_SM_HPD_IncidentInterface_Staging_WS.xml |
+| BMC_PROBLEM_WSDL | BMC problem WSDL file path | /opt/bridgon/var/db/bmc-tt-connector/WSDL-path/H3G_PBM_ProblemInterface_Staging_WS.xml |
+| BMC_INCIDENT_QUERY_WSDL | BMC incident query WSDL file path | /opt/bridgon/var/db/bmc-tt-connector/WSDL-path/H3G_HPD_IncidentInterface_WS.xml |
+| VALUE_MAPPING_PATH | Value mapping JSON file path | /opt/bridgon/var/db/bmc-tt-connector/value-mapping/BMC_TT_ENUM_MAPPING.json |
+| SEVERITY_MAPPING_PATH | Severity mapping JSON file path | /opt/bridgon/var/db/bmc-tt-connector/value-mapping/PRIORITY_TT_SEVERITY.json |
 
 **Parent topic:** [Configuring Environment Variables](../topics/configuring_proassure.md)
 
+[Home](../index.md)
