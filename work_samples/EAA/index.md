@@ -1,9 +1,9 @@
 # Installation Guide
 
 [Home](../index.md)
-
--   [NetPulse™ Overview](EAA_Install_Guide_topics/eaa_overview.md)
--   [NetPulse™ Architecture](EAA_Install_Guide_topics/eaa_arch.md)
+-   [Glossary](topics/glossary.md)
+-   [NetPulse Overview](EAA_Install_Guide_topics/eaa_overview.md)
+-   [NetPulse Architecture](EAA_Install_Guide_topics/eaa_arch.md)
 -   [Requirements](topics/d0e517.md)
 -   [Preparation](topics/d0e615.md)
 -   [Deploying Common Configuration](topics/d0e774.md)
