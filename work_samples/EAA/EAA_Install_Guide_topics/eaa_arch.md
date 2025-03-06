@@ -1,25 +1,17 @@
-# NetPulse Architecture
+## NetPulse Architecture
 
-NetPulse applications rely on a number of building blocks, which can be grouped the following layers:
+NetPulse applications are built on a structured architecture comprising multiple layers, each serving a distinct purpose. These layers include:
 
--   Infrastructure layer provides basic IT resources.
--   Platform as a Service\(PaaS\) layer, provides various domain-agnostic services \(platform operations, databases, and network control\)
--   Common Services layer, offering NetPulse domain specific services.
+### **Infrastructure Layer**
+The **Infrastructure Layer** provides the fundamental IT resources required for NetPulse applications. NetPulse can operate on various types of infrastructure, including public cloud, private cloud, and bare metal environments. The infrastructure provisioning process is tailored to the specific needs of each deployment.
 
+### **Platform as a Service (PaaS) Layer**
+The **PaaS Layer** delivers essential domain-agnostic services, such as platform operations, database management, and network control. These services ensure a stable and scalable foundation for NetPulse applications.
 
-## Infrastructure Layer
+### **Common Services and Applications**
+The **Common Services Layer** encompasses domain-specific services essential to NetPulse operations. It is further categorized into the following functional groups:
 
-NetPulse applications run on any type of infrastructure, for example, a public cloud, private cloud or bare metal. The infrastructure provisioning is specific to each deployment.
-
-## PaaS Layer 
-
-The PaaS layer offers various domain agnostic services like platform operations, databases, and network control.
-
-## Common Services and Applications
-
-This layer provides NetPulse domain specific services and is divided into the following families:
-
--   Domain-related Services and Web Applications: This includes all common components allowing for access and management to the inventories.
--   Big Data Jobs: This includes common big data analytics, which are used as part of NetPulse.
--   Non-functional services: This includes transversal services such as monitoring, security \(authentication/ authorization\), and automation.
+- **Domain-Related Services and Web Applications:** These components provide access to and management of network inventories, ensuring seamless integration and operation.
+- **Big Data Processing:** This includes analytical components that support advanced data analytics within NetPulse.
+- **Non-Functional Services:** These encompass transversal functionalities, such as monitoring, security (authentication and authorization), and automation, which enhance the reliability and efficiency of the platform.
 
