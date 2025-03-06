@@ -1,4 +1,4 @@
-[Home](index.md)
+[Home](../index.md)
 
 # Installing Big Data Framework
 
@@ -154,5 +154,5 @@ Check deployment status:
 python ./netpulse-deploy/shell/check-deployment-status.py
 ```
 
-[Home](index.md)
+[Home](../index.md)
 
