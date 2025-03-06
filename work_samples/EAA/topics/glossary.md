@@ -1,3 +1,4 @@
+[Home](../index.md)
 # Glossary
 
 This glossary provides definitions for key terms used in the NetPulse Suite documentation.
@@ -89,4 +90,4 @@ The official documentation for accessing and using the NetPulse Suite web UI, in
 Text-based files used to define environment variables and settings for NetPulse components.
 
 ---
-**Home:** [../index.md](../index.md)
+[Home](../index.md)
