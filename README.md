@@ -7,13 +7,13 @@ Welcome to my technical writing portfolio! This repository contains samples of m
 ### 🖧 NetPulse Suite Documentation
 NetPulse is a telecom network assurance suite with web-based applications for network performance management, fault management, outage prediction, monitoring, and orchestration.
 
-- **[NetPulse User Guide](EAA/userguide.md)** – A comprehensive guide to accessing and using NetPulse’s web-based features.
-- **[NetPulse Installation Guide](EAA/index.md)** – Step-by-step instructions for installing and setting up NetPulse.
+- **[NetPulse User Guide](work_samples/EAA/userguide.md)** – A comprehensive guide to accessing and using NetPulse’s web-based features.
+- **[NetPulse Installation Guide](work_samples/EAA/index.md)** – Step-by-step instructions for installing and setting up NetPulse.
 
 ### 🖥️ VirtuX Pro Documentation
 VirtuX Pro is a virtualization platform for managing virtual machines efficiently.
 
-- **[VirtuX Pro Installation Guide](VirtuX-Pro-UserGuide/docs/installation.md)** – Instructions for installing VirtuX Pro on Windows, Linux, and macOS.
+- **[VirtuX Pro Installation Guide](work_samples/VirtuX-Pro-UserGuide/docs/installation.md)** – Instructions for installing VirtuX Pro on Windows, Linux, and macOS.
 - **[Advanced Features in VirtuX Pro](docs/virtux_pro_advanced_features.md)** – Details on snapshots, high availability, and cloud integration.
 - **[Virtual Machine Management](docs/virtux_pro_vm_management.md)** – Guide on creating, configuring, and optimizing virtual machines.
 - **[VirtuX Pro Troubleshooting Guide](docs/virtux_pro_troubleshooting.md)** – Solutions to common issues users may encounter.
