@@ -13,7 +13,7 @@ NetPulse is a telecom network assurance suite with web-based applications for ne
 ### 🖥️ VirtuX Pro Documentation
 VirtuX Pro is a virtualization platform for managing virtual machines efficiently.
 
-- **[VirtuX Pro Installation Guide](docs/virtux_pro_installation.md)** – Instructions for installing VirtuX Pro on Windows, Linux, and macOS.
+- **[VirtuX Pro Installation Guide](VirtuX-Pro-UserGuide/docs/installation.md)** – Instructions for installing VirtuX Pro on Windows, Linux, and macOS.
 - **[Advanced Features in VirtuX Pro](docs/virtux_pro_advanced_features.md)** – Details on snapshots, high availability, and cloud integration.
 - **[Virtual Machine Management](docs/virtux_pro_vm_management.md)** – Guide on creating, configuring, and optimizing virtual machines.
 - **[VirtuX Pro Troubleshooting Guide](docs/virtux_pro_troubleshooting.md)** – Solutions to common issues users may encounter.
