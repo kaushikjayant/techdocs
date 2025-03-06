@@ -1,12 +1,14 @@
-# Installing FM and TT Stack {#topic_zll_yqr_3fb}
+# Installing FaultShield Stack
 
-Install the FM and TT Stacks as follows:
+[Home](../index.md)
 
--   Go to <root\_git\_dir\> directory in terminal and execute the following commands:
-    -   In case of a fresh/first time installation:
+## Installation Procedure
 
-        ```
-        ./eaa-ecp/shell/deploy-cas.sh --freshinstall
-        ```
+Install the FaultShield Stack using the following steps:
 
+1. Navigate to the `<root_git_dir>` directory in the terminal.
+2. Execute the following command for a fresh/first-time installation:
 
+   ```sh
+   ./ncp/shell/deploy-cas.sh --freshinstall
+[Home](../index.md)
