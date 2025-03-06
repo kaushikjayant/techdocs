@@ -1,3 +1,5 @@
+[Home](../index.md)
+
 ## NetPulse Architecture
 
 NetPulse applications are built on a structured architecture comprising multiple layers, each serving a distinct purpose. These layers include:
@@ -14,4 +16,5 @@ The **Common Services Layer** encompasses domain-specific services essential to 
 - **Domain-Related Services and Web Applications:** These components provide access to and management of network inventories, ensuring seamless integration and operation.
 - **Big Data Processing:** This includes analytical components that support advanced data analytics within NetPulse.
 - **Non-Functional Services:** These encompass transversal functionalities, such as monitoring, security (authentication and authorization), and automation, which enhance the reliability and efficiency of the platform.
+[Home](../index.md)
 
