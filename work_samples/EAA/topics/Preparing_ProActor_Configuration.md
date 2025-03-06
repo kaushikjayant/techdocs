@@ -1,5 +1,5 @@
 [Home](../index.md)
-# Preparing Configuration {#topic_otj_jtl_3db}
+# Preparing Configuration 
 
 ## Target  
 For a given product, ensure all customization is entered into configuration files and that all expected PVs are created.
