@@ -1,3 +1,5 @@
+[Home](../index.md)
+
 # Customizing PulseAssure Configuration
 
 This section describes the changes that you may need to make to the YAML files corresponding to PulseAssure components. The customizable variables for PulseAssure are described in the table below:
@@ -27,7 +29,7 @@ This section describes the changes that you may need to make to the YAML files c
 | PROBLEM_MANAGER_APPLICATION_MODE | Set as HA if high availability is configured | HA |
 | PROBLEM_MANAGER_REPLICAS | Number of replicas required for PulseAssure-problem-manager pod. Must be '2' or higher for HA, '1' for standalone | 2 |
 
-## Customizing PulseAssure-SPM Configuration File { .section }
+## Customizing PulseAssure-SPM Configuration File
 
 Perform the following steps to modify the configuration file for PulseAssure-SPM UI:
 
@@ -54,5 +56,5 @@ Perform the following steps to modify the configuration file for PulseAssure-SPM
 
 **Note:** You can add values only in the `"values"` array.
 
-**Parent topic:** [Configuring Environment Variables](../topics/configuring_PulseAssure.md)
+[Home](../index.md)
 
