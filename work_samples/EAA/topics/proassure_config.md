@@ -1,6 +1,6 @@
 # Customizing PulseAssure Configuration
 
-This section describes the changes that you may need to make to the YAML files corresponding to PulseAssure components. See [Configuring Environment Variables](configuring_PulseAssure.md) for the procedure to customize environment variables in a template. The customizable variables for PulseAssure are described in the table below:
+This section describes the changes that you may need to make to the YAML files corresponding to PulseAssure components. The customizable variables for PulseAssure are described in the table below:
 
 | Variable Name | Description | Example/Default Value |
 |--------------|-------------|----------------------|
