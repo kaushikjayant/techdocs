@@ -1,40 +1,42 @@
-# Adding a New MOC to the GIS View in Web Client {#topic_gis_configuration}
+[Home](../index.md)
 
-You can add a new MOC to the GIS view in web client as follows:
+# Adding a New MOC to the GIS View in Web Client 
 
--   Enrichment to be done via cmdb generic connector for the MOC along with it's x, y co-ordinates.
+You can add a new MOC to the GIS view in the web client as follows:
 
-    ![](Enrichment_Sample.png "Enrichment Sample")
+- **Enrichment via CMDB Generic Connector**:  
+  Enrich the MOC data along with its x, y coordinates.  
+  
+- **Verify Enrichment in NetPulseAssure Desktop Client**:  
+  Ensure that the enrichment for the new MOC is complete and populates data correctly.  
+  
+- **Check MOC Availability in Database**:  
+  Confirm that the new MOC is available in the `moc_def` table and note the ID.  
+  
+- **Update `GisCommon.site.properties`**:  
+  Append the MOC ID in the GIS configuration file:  
+  
+  ```shell
+  [bridgon@ncp-pulseoptima-nbi-mdds-netpulseassure-37-zks3x properties-site]$ cat GisCommon.site.properties
 
--   Check if the Enrichment for the new MOC is done and is populating data in proassure desktop client.
+  NodeClass=100000199,100000225
+  pulseoptima.EnableGIS=true
+  NodeLayer.CoordSysId=4326
+  #AnchoredNodeClass=5002;5001,2002;2001,12000021,16175003;16175024,90;91;100000199;100000225
 
-    ![](Enrichment_of_New_MOC.png "Enrichment of New MOC")
+  [bridgon@ncp-pulseoptima-nbi-mdds-netpulseassure-37-zks3x properties-site]
+  ```
 
--   Check if the new MOC is available in moc\_def table, also note the ID.
+  **Note:** `AnchoredNodeClass` is used when a parent-child relationship exists. Separate values using a semicolon (`<child>;<parent>`).  
 
-    ![](Moc_Def_Table.png "MOC Definition Table")
 
--   Append the ID in GisCommon.site.properties:
+- **Restart Required Pods**:  
+  Restart the following pods for changes to take effect:  
+  - `gis-netpulseassure`
+  - `interactive-mdds-netpulseassure`
+  - `nbi-mdds-netpulseassure`
 
-    \[mycom@eaa-proptima-nbi-mdds-proassure-37-zks3x properties-site\]$ cat GisCommon.site.properties
+**Parent topic:** [Configuring PulseOptima](../topics/Configuring_PulseOptima.md)
 
-    NodeClass=100000199,100000225
-
-    Proptima.EnableGIS=true
-
-    NodeLayer.CoordSysId=4326
-
-    \#AnchoredNodeClass=5002;5001,2002;2001,12000021,16175003;16175024,90;91;100000199;100000225
-
-    \[mycom@eaa-proptima-nbi-mdds-proassure-37-zks3x properties-site\]
-
-    **Note:** AnchoredNodeClass is generally used when you have a parent-child relationship present, it should be separated with semicolon in the form <child\>;<parent\>
-
-    Sample GIS image between NodeB and FddCell given below.
-
-    ![](Sample_GIS_Image.png "Sample GIS Image between NodeB and FddCell")
-
--   Restart gis-proassure, interactive-mdds-proassure and nbi-mdds-proassure pods.
-
-**Parent topic:** [Configuring PrOptima](../topics/Configuring_PrOptima.md)
+[Home](../index.md)
 
