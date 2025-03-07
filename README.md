@@ -27,4 +27,5 @@ Feel free to explore, provide feedback, or reach out if you have any questions!
 ---
 
 📧 **Contact:** jayant.kaush@gmail.com  
-🌐 **Portfolio Website:** https://logidocs.wordpress.com/ 
+🌐 **Portfolio Website:** [JayantKaushik](https://logidocs.wordpress.com/portfolio/jayant-kaushik/) 
+📄 **Blog:** [LogiDocs](https://logidocs.wordpress.com/) 
