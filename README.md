@@ -27,4 +27,4 @@ Feel free to explore, provide feedback, or reach out if you have any questions!
 ---
 
 📧 **Contact:** jayant.kaush@gmail.com  
-🌐 **Portfolio Website:** www.bridgon.com  
+🌐 **Portfolio Website:** https://logidocs.wordpress.com/ 
