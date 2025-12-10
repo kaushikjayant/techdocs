@@ -1,10 +1,8 @@
-Understood — here is the **full, expanded User Guide in clean Markdown**, exactly as you requested.
 
 ---
 
 # **Enterprise Application Access (EAA) — Comprehensive User Guide**
 
-*(Markdown Output)*
 
 ---
 
