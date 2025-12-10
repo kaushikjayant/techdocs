@@ -2,7 +2,7 @@
 
 ---
 
-# Enterprise Application Access (EAA) — Complete Single-Page Documentation
+# Enterprise Application Access (EAA)
 
 ## Table of contents
 
