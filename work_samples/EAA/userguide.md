@@ -423,4 +423,3 @@ Can integrate with:
 
 
 
-Just tell me **“Export as PDF”** or the format you prefer, and I will generate it.
