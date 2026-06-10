@@ -83,7 +83,7 @@ LLM/RAG Pipelines, Prompt Engineering, Vector Embeddings
 
 ## Professional Background
 
-- **Principal Technical Writer & Platform Architect** — Bridgon (2022–Present)
+- **Principal Technical Writer & Platform Architect** — NXP (2022–Present)
 - **Technical Writer** — Telecom & Cloud Infrastructure (2010–2022)
 - **16+ years** across semiconductor, telecom, cloud-native domains
 - **Six Sigma Green Belt** — process optimization and quality management
@@ -93,6 +93,5 @@ LLM/RAG Pipelines, Prompt Engineering, Vector Embeddings
 ---
 
 📧 **Contact:** jayant.kaush@gmail.com  
-🌐 **Portfolio:** [https://bridgon.com](https://bridgon.com)  
 📄 **LinkedIn:** [linkedin.com/in/jayant-kaushik-518429b](https://linkedin.com/in/jayant-kaushik-518429b)  
 🔗 **GitHub:** [github.com/kaushikjayant](https://github.com/kaushikjayant)
